@@ -38,19 +38,19 @@ esperado que você torne o código mais testável e então adicione testes
 unitários que validem a aplicação de forma mais granular e que dêem segurança
 para futuras refatorações e para o acréscimo das novas funcionalidades.
 
-Também serão avaliados a abordagem para desenvolvimento da solução (Desing 
+Também serão avaliados a abordagem para desenvolvimento da solução (Desing
 Patters, DDD, Solid, etc.) e a arquitetura utilizada (Clean Architecture, Onion
 Architecture, etc.).
 
 O projeto de testes possui três ApprovalTests.
 
-* O teste TestStatementExampleLegacy, está passando no estado atual do
+- O teste TestStatementExampleLegacy, está passando no estado atual do
   código. Este teste servirá para te dar segurança das primeiras refatorações
   até que você escreva os testes unitários, mas ao final, com as
   funcionalidades novas implementadas, este teste se torna obsoleto.
-* O teste TestTextStatementExample está implementado, porém não executa, pois o
+- O teste TestTextStatementExample está implementado, porém não executa, pois o
   gênero histórico ainda não está implementado.
-* O teste TestXmlStatementExample não está implementado e deve ser implementado
+- O teste TestXmlStatementExample não está implementado e deve ser implementado
   por você e gerar a saída aprovada que está no projeto de testes.
 
 O código dos testes pode ser refatorado, desde que a saída continue a
@@ -66,45 +66,55 @@ pelo histórico de versões.
 Não é mandatório, mas de maneira opcional os seguintes requisitos poderão ser
 implementados:
 
-* Implementar processamento assincrono de extratos, os dados devem ser imputados,
-  enfileirados, processados assincronicamente e gerar o XML resultante em um 
+- Implementar processamento assincrono de extratos, os dados devem ser imputados,
+  enfileirados, processados assincronicamente e gerar o XML resultante em um
   diretório
-* API rest para expor os métodos para futuras integrações
-  * Expor documentação da API por Swagger
-* Persistencia dos dados em um banco de dados para salvar o extrato com suas
+- API rest para expor os métodos para futuras integrações
+  - Expor documentação da API por Swagger
+- Persistencia dos dados em um banco de dados para salvar o extrato com suas
   respectivas peças
 
 ## Regras de negócio
 
-* O valor base para a cobrança de todas as peças é o número de linhas da peça
+- O valor base para a cobrança de todas as peças é o número de linhas da peça
   dividido por 10
-* O número de linhas da peça considerado para o cálculo do valor base deve ser
+- O número de linhas da peça considerado para o cálculo do valor base deve ser
   forçado a estar no intervalo entre 1000 e 4000
-* O valor para uma peça de tragédia é igual ao valor base caso a platéia seja
+- O valor para uma peça de tragédia é igual ao valor base caso a platéia seja
   menor ou igual a 30, somando mais 10.00 para cada espectador adicional a
   esses 30
-* Para uma peça de comédia, o cálculo base é sempre somado a 3.00 por
+- Para uma peça de comédia, o cálculo base é sempre somado a 3.00 por
   espectador. Além disso, se a platéia for maior que 20, o valor deve ser
   aumentado em 100.00 e deve se somar mais 5.00 por espectador adicional aos 20
   de base
-* Todas performances dão 1 crédito para cada espectador acima de 30, não
+- Todas performances dão 1 crédito para cada espectador acima de 30, não
   valendo nenhum crédito para uma platéia menor ou igual a 30
-* Existe um bônus de créditos de um quinto da platéia arredondados para baixo,
+- Existe um bônus de créditos de um quinto da platéia arredondados para baixo,
   exclusivo para peças de comédia
-* As peças históricas são, por algum motivo, mais complicadas e têm o valor
+- As peças históricas são, por algum motivo, mais complicadas e têm o valor
   igual à soma dos valores correspondentes a uma peça de tragédia e uma de
   comédia
-* A estrutura do XML deve seguir como referência a saída aprovada no
+- A estrutura do XML deve seguir como referência a saída aprovada no
   ApprovalTest correspondente
 
 ## Entregas
 
 Para realizar a entrega do teste você deve:
 
-* Relizar o fork e clonar esse repositório para sua máquina.
-  
-* Criar uma branch com o nome de `teste/[NOME]`.
-  * `[NOME]`: Seu nome.
-  * Exemplos: `teste/fulano-da-silva`; `teste/beltrano-primeiro-gomes`.
-  
-* Realize o pull request da sua branch nesse repositório.
+- Relizar o fork e clonar esse repositório para sua máquina.
+- Criar uma branch com o nome de `teste/[NOME]`.
+  - `[NOME]`: Seu nome.
+  - Exemplos: `teste/fulano-da-silva`; `teste/beltrano-primeiro-gomes`.
+- Realize o pull request da sua branch nesse repositório.
+
+## Apresentacao
+
+https://drive.google.com/drive/folders/1xKw35g4KqBjttfxiUCesqmzrqruQYs-p?usp=drive_link
+
+## Email
+
+phalves944@gmail.com
+
+## Contato
+
+85996197558
