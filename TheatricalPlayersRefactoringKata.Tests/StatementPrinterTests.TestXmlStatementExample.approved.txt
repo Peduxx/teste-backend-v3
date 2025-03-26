@@ -1,38 +1,31 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
-<Statement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Customer>BigCo</Customer>
-  <Items>
-    <Item>
-      <AmountOwed>650</AmountOwed>
-      <EarnedCredits>25</EarnedCredits>
-      <Seats>55</Seats>
-    </Item>
-    <Item>
-      <AmountOwed>547</AmountOwed>
-      <EarnedCredits>12</EarnedCredits>
-      <Seats>35</Seats>
-    </Item>
-    <Item>
-      <AmountOwed>456</AmountOwed>
-      <EarnedCredits>10</EarnedCredits>
-      <Seats>40</Seats>
-    </Item>
-    <Item>
-      <AmountOwed>705.4</AmountOwed>
-      <EarnedCredits>0</EarnedCredits>
-      <Seats>20</Seats>
-    </Item>
-    <Item>
-      <AmountOwed>931.6</AmountOwed>
-      <EarnedCredits>9</EarnedCredits>
-      <Seats>39</Seats>
-    </Item>
-    <Item>
-      <AmountOwed>705.4</AmountOwed>
-      <EarnedCredits>0</EarnedCredits>
-      <Seats>20</Seats>
-    </Item>
-  </Items>
-  <AmountOwed>3995.4</AmountOwed>
-  <EarnedCredits>56</EarnedCredits>
+<?xml version="1.0" encoding="utf-16"?>
+<Statement customer="BigCo">
+  <Performances>
+    <Performance play="Hamlet" audience="55">
+      <Amount>$6.50</Amount>
+      <Credits>25</Credits>
+    </Performance>
+    <Performance play="As You Like It" audience="35">
+      <Amount>$5.47</Amount>
+      <Credits>12</Credits>
+    </Performance>
+    <Performance play="Othello" audience="40">
+      <Amount>$4.56</Amount>
+      <Credits>10</Credits>
+    </Performance>
+    <Performance play="Henry V" audience="20">
+      <Amount>$7.05</Amount>
+      <Credits>0</Credits>
+    </Performance>
+    <Performance play="King John" audience="39">
+      <Amount>$9.32</Amount>
+      <Credits>9</Credits>
+    </Performance>
+    <Performance play="Henry V" audience="20">
+      <Amount>$7.05</Amount>
+      <Credits>0</Credits>
+    </Performance>
+  </Performances>
+  <TotalAmount>$39.95</TotalAmount>
+  <TotalCredits>56</TotalCredits>
 </Statement>
